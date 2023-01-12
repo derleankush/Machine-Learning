@@ -1,0 +1,50 @@
+<html>
+    <head>
+        
+        <title> OutPut </title>
+       
+        <style>
+            .myDiv {
+              border: 5px outset red;
+              background-color: #D7FFDF;    
+              text-align: center;
+            }
+            </style>   
+    </head>
+    <body>
+     
+        <h1 style = color:red;text-align:center> Collage Placement prediction   </h1>
+
+    <div class="myDiv">
+        
+        <form action="/Mod" method = "POST">
+            <p>Age : <input type = "text" name = "Age" /></p>  
+            <p>CGPA : <input type = "text" name = "CGPA" /></p>
+            <p>HistoryOfBacklogs : <input type = "text" name = "HistoryOfBacklogs" /></p>
+
+            <p> 
+                Internship : <select name="Internship">
+                <option value ="1">Yes</option>
+                <option value ="0">No</option>
+                </select></p>
+                <p>    
+            Stream : <select name="Stream">
+                <option value ="none">Nothing</option>
+                <option value ="Civil">Civil</option>
+                <option value ="Computer Science">Computer Science</option>
+                <option value ="Electrical">Electrical</option>
+                <option value ="Electronics And Communication">Electronics And Communication</option>
+                <option value ="Information Technology">Information Technology</option>
+                <option value ="Mechanical">Mechanical</option>
+                </select> 
+            </p>
+            <p><input type = "submit" value = "Submit" /></p>
+        </form>
+
+        <h1> College Placement result: {{result}} </h1>
+        
+    </div>  
+    </body>
+</html>
+
+
