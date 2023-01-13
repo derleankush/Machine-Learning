@@ -1,0 +1,54 @@
+<html>
+    <head>
+        
+        <title> OutPut </title>
+       
+        <style>
+            .myDiv {
+              border: 5px outset red;
+              background-color: #D7FFDF;    
+              text-align: center;
+            }
+            </style>   
+    </head>
+    <body>
+     
+        <h1 style = color:red;text-align:center> Medical Charges Prediction   </h1>
+
+    <div class="myDiv">
+        
+        <form action="/Predict" method = "POST">
+            <p>Age : <input type = "text" name = "Age" /></p>  
+            <p> 
+                SEX : <select name="Sex">
+                <option value ="male">Male</option>
+                <option value ="female">Female</option>
+                </select></p>
+                <p> 
+
+            <p>BMI : <input type = "text" name = "bmi" /></p>
+            <p>Children : <input type = "text" name = "children" /></p>
+
+            <p> 
+                Smoker : <select name="smoker">
+                <option value ="yes">Yes</option>
+                <option value ="no">No</option>
+                </select></p>
+                <p>    
+                    Region : <select name="region">
+                <option value ="southeast">southeast</option>
+                <option value ="southwest">southwest</option>
+                <option value ="northwest">northwest</option>
+                <option value ="northeast">northeast</option>
+            
+            </p>
+            <p><input type = "submit" value = "Submit" /></p>
+        </form>
+
+        <h1> Medical Charges Prediction: {{result}} Rs/- </h1>
+        
+    </div>  
+    </body>
+</html>
+
+
